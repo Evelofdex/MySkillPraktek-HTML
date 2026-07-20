@@ -11,38 +11,79 @@
             <form action="">
                 <fieldset>
                     <h2>Pendaftaran kerja</h2>
-                    <label for="name"> Nama </label>
-                    <input type="text" placeholder="Masukan nama Lengkap" name="name" id="name">
+                    <fieldset>
+                        <legend>Data diri</legend>
+                        <label for="name"> Nama </label>
+                        <input type="text" placeholder="Masukan nama Lengkap" name="name" id="name">
+                        <br>
+                        <label for="email"> Email </label>
+                        <input type="email" placeholder="masukan Email" name="email" id="email">
+                        <br>
+                        <label for="paswd"> Password </label>
+                        <input type="password" placeholder="masukan password" name="paswd" id="paswd">
+                        <br>
+                        <label for="phoneNumber"> Nomor telepon </label>
+                        <input type="number" placeholder="Masukan Nomor Wangsaf" name="phoneNumber" id="phoneNumber">
+                        <br>
+                        <label for=""> jenis kelamin: </label> <br>
+                        <!-- name di radio harus sama bila mau salah satu yg bisa dipilih -->
+                        <input type="radio" name="gender" id="gender_male">
+                        <label for="gender_male"> Lanang </label>
+                        <input type="radio" name="gender" id="gender_female">
+                        <label for="gender_female"> Perempuan </label>
+                    </fieldset>
                     <br>
-                    <label for="email"> Email </label>
-                    <input type="email" placeholder="masukan Email" name="email" id="email">
+                    <!-- contoh checkbox -->
+                    <fieldset>
+                        <legend>Pilih pengalaman bekerja</legend>
+                        <ul>
+                            <input type="checkbox" name="pengalamanBekerja" id="pengalamanBekerja">
+                            <label for="pengalamanBekerja"> pengalaman 1</label>
+                        </ul> 
+                        <ul>
+                            <input type="checkbox" name="pengalamanBekerja" id="pengalamanBekerja">
+                            <label for="pengalamanBekerja"> pengalaman 2</label>
+                        </ul> 
+                        <ul>
+                            <input type="checkbox" name="pengalamanBekerja" id="pengalamanBekerja">
+                            <label for="pengalamanBekerja"> pengalaman 3</label>
+                        </ul> 
+                        <label for="tglPengalaman"> Pengalaman dilakukan terakhir</label>
+                        <input type="date" name="tglPengalaman" id="tglPengalaman">
+                        <br>
+                        <label for="buktiFile"> Bukti file pengalaman: </label>
+                        <input type="file" name="buktiFile" id="buktiFile">
+                        <br>
+                    </fieldset>
                     <br>
-                    <label for="paswd"> Password </label>
-                    <input type="password" placeholder="masukan password" name="paswd" id="paswd">
+                    <!-- contoh radio, satu pilihan doang dengan name yg sama-->
+                    <fieldset>
+                        <legend> Pilih daftar pekerjaan </legend>
+                        <ul>
+                            <input type="radio" name="pekerjaan" id="pekerjaan_1">
+                            <label for="pekerjaan_1">Pekerjaan 1</label>
+                        </ul>
+                        <ul>
+                            <input type="radio" name="pekerjaan" id="pekerjaan_2">
+                            <label for="pekerjaan_2">Pekerjaan 2</label>
+                        </ul>
+                        <ul>
+                            <input type="radio" name="pekerjaan" id="pekerjaan_2">
+                            <label for="pekerjaan_3">Pekerjaan 3</label>
+                        </ul>
+                    </fieldset>
                     <br>
-                    <label for="phoneNumber"> Nomor telepon </label>
-                    <input type="number" placeholder="Masukan Nomor Wangsaf" name="phoneNumber" id="phoneNumber">
+                    <!-- contoh dropdown-->
+                    <label for="contohDropdown"> Contoh dropdown </label>
+                    <select name="contohDropdown" id="contohDropdown">
+                        <option value="pilihanDefault"> default </option>
+                        <option value="pilihan1"> pilihan 1 </option>
+                        <option value="pilihan2"> pilihan 2 </option>
+                        <option value="pilihan3"> pilihan 3 </option>
+                        <option value="pilihan4"> pilihan 4 </option>
+                    </select>
                     <br>
-                    <label for=""> jenis kelamin: </label> <br>
-                    <!-- name di radio harus sama bila mau salah satu yg bisa dipilih -->
-                    <input type="radio" name="gender" id="gender_male">
-                    <label for="gender_male"> Lanang </label>
-                    <input type="radio" name="gender" id="gender_female">
-                    <label for="gender_female"> Perempuan </label>
-                    <br> <br>
-                    <label for=""> Pilih daftar pekerjaan </label>
-                    <ul>
-                        <input type="radio" name="pekerjaan" id="pekerjaan_1">
-                        <label for="pekerjaan_1">Pekerjaan 1</label>
-                    </ul>
-                    <ul>
-                        <input type="radio" name="pekerjaan" id="pekerjaan_2">
-                        <label for="pekerjaan_2">Pekerjaan 2</label>
-                    </ul>
-                    <ul>
-                        <input type="radio" name="pekerjaan" id="pekerjaan_2">
-                        <label for="pekerjaan_3">Pekerjaan 3</label>
-                    </ul>
+                    
                     <br>
                     <label for="reasonText">Masukan alasan untuk daftar: </label> <br>
                     <textarea 
