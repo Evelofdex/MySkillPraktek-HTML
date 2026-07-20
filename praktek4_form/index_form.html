@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> form </title>
+    </head>
+    <header>
+        <h1> Contoh form </h1>
+    </header>
+    <body>
+        <main>
+            <form action="">
+                <fieldset>
+                    <h2>Pendaftaran kerja</h2>
+                    <label for="name"> Nama </label>
+                    <input type="text" placeholder="Masukan nama Lengkap" name="name" id="name">
+                    <br>
+                    <label for="email"> Email </label>
+                    <input type="email" placeholder="masukan Email" name="email" id="email">
+                    <br>
+                    <label for="paswd"> Password </label>
+                    <input type="password" placeholder="masukan password" name="paswd" id="paswd">
+                    <br>
+                    <label for="phoneNumber"> Nomor telepon </label>
+                    <input type="number" placeholder="Masukan Nomor Wangsaf" name="phoneNumber" id="phoneNumber">
+                    <br>
+                    <label for=""> jenis kelamin: </label> <br>
+                    <!-- name di radio harus sama bila mau salah satu yg bisa dipilih -->
+                    <input type="radio" name="gender" id="gender_male">
+                    <label for="gender_male"> Lanang </label>
+                    <input type="radio" name="gender" id="gender_female">
+                    <label for="gender_female"> Perempuan </label>
+                    <br> <br>
+                    <label for=""> Pilih daftar pekerjaan </label>
+                    <ul>
+                        <input type="radio" name="pekerjaan" id="pekerjaan_1">
+                        <label for="pekerjaan_1">Pekerjaan 1</label>
+                    </ul>
+                    <ul>
+                        <input type="radio" name="pekerjaan" id="pekerjaan_2">
+                        <label for="pekerjaan_2">Pekerjaan 2</label>
+                    </ul>
+                    <ul>
+                        <input type="radio" name="pekerjaan" id="pekerjaan_2">
+                        <label for="pekerjaan_3">Pekerjaan 3</label>
+                    </ul>
+                    <br>
+                    <label for="reasonText">Masukan alasan untuk daftar: </label> <br>
+                    <textarea 
+                        name="reasonText" 
+                        id="reasonText" placeholder="Masukan alasan disini"
+                        cols="50"
+                        rows="7"
+                    ></textarea>
+                </fieldset>
+                <br>
+                <button type="submit"> submit form</button>
+                <button type="reset"> reset form</button>
+            </form>
+        </main>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
